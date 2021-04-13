@@ -14,6 +14,36 @@
     "pages/auth/index",
     "pages/pay/index"
   ],
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/assets/images/icons/home.png",
+        "selectedIconPath": "/assets/images/icons/home-s.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/category/index",
+        "iconPath": "/assets/images/icons/modular.png",
+        "selectedIconPath": "/assets/images/icons/modular-s.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/cart/index",
+        "iconPath": "/assets/images/icons/shop.png",
+        "selectedIconPath": "/assets/images/icons/shop-s.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "iconPath": "/assets/images/icons/user.png",
+        "selectedIconPath": "/assets/images/icons/user-s.png",
+        "text": "我的"
+      }
+    ]
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
