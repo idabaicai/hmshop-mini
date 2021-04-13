@@ -1,0 +1,6 @@
+<!--components/SerchInput/SerchInput.wxml-->
+<view class="contaniner">
+    <navigator class="nav" url="/pages/search/index">
+       <text class="iconfont icon-search"></text> <text class="search">搜索</text>
+    </navigator>
+</view>

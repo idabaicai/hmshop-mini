@@ -5,7 +5,26 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    imageList: [
+      {
+        id: 1001,
+        good_name: '夏季鞋子',
+        url: '',
+        path: '../../assets/images/good/item1.jpg'
+      },
+      {
+        id: 1002,
+        good_name: '夏季鞋子',
+        url: '',
+        path: '../../assets/images/good/item2.jpg'
+      },
+      {
+        id: 1003,
+        good_name: '夏季鞋子',
+        url: '',
+        path: '/assets/images/good/item3.jpg'
+      },
+    ]
   },
 
   /**

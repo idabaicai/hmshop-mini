@@ -1,4 +1,12 @@
 /* pages/index/index.wxss */
-.test {
-  color: var(--theme-color);
+/* 轮播图 */
+.swiper-container {
+  margin-top: 10rpx;
+}
+.swiper-container swiper {
+  width: 750rpx;
+  height: 320rpx;
+}
+.swiper-container image {
+  width: 100%;
 }

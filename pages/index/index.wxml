@@ -1,6 +1,21 @@
 <!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
-<view>
-  <text class="test">test</text>
-  <text class="iconfont icon-scanning" style="color: red;"></text>
+<view class="index">
+  <!-- 搜索框 start -->
+  <s-input></s-input>
+  <!-- 搜索框 end -->
+  <!-- 轮播图 start -->
+  <view class="swiper-container">
+    <swiper autoplay="true" class="swiper">
+      <swiper-item 
+        wx:for="{{imageList}}"
+        wx:key="id"
+      >
+        <navigator url="{{item.url}}" class="nav">
+          <!--  mode="widthFix" 让高适应宽度的变化 -->
+          <image src="{{item.path}}" mode="widthFix"></image>
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 轮播图 end -->
 </view>
