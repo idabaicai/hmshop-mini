@@ -3,7 +3,7 @@
 
 | 页面名称 | 目录名称 |
 |:------: |:-----:|
-| ⾸⻚ | index
+| ⾸⻚ | index |
 | 分类⻚⾯ | category |
 | 商品列表⻚⾯ | goods_list |
 | 商品详情⻚⾯ | goods_detail |

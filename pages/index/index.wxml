@@ -1,5 +1,5 @@
 <!--pages/index/index.wxml-->
 <text>pages/index/index.wxml</text>
 <view>
-  <text class="iconfont icon-scanning"></text>
+  <text class="iconfont icon-scanning" style="color: red;"></text>
 </view>
