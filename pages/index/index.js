@@ -53,6 +53,105 @@ Page({
         url: '',
         icon_path: '../../assets/images/cates/item4.png'
       },
+    ],
+    // 楼层数据
+    floorList: [
+      {
+        title: {
+          name: '夏季新品',
+          img_src: '/assets/images/floor/t1.jpg'
+        },
+        productList: [
+          {
+            name: '优质男装',
+            img_src: '/assets/images/floor/list1-1.jpg',
+            open_type: 'navigate',
+            url: '/pages/goods_list/index?query="服饰"',
+          },
+          {
+            name: '夏季热门',
+            img_src: '/assets/images/floor/list1-2.jpg',
+            open_type: 'navigate',
+            url: '/pages/goods_list/index?query="服饰"',
+          },
+          {
+            name: '夏季热门',
+            img_src: '/assets/images/floor/list1-2.jpg',
+            open_type: 'navigate',
+            url: '/pages/goods_list/index?query="服饰"',
+          },
+          {
+            name: '夏季热门',
+            img_src: '/assets/images/floor/list1-2.jpg',
+            open_type: 'navigate',
+            url: '/pages/goods_list/index?query="服饰"',
+          },
+        ]
+      },
+      {
+        title: {
+          name: '国产好鞋',
+          img_src: '/assets/images/floor/t2.jpg'
+        },
+        productList: [
+          {
+            name: '优质男装',
+            img_src: '/assets/images/floor/list2-1.jpg',
+            open_type: 'navigate',
+            url: '/pages/goods_list/index?query="服饰"',
+          },
+          {
+            name: '夏季热门',
+            img_src: '/assets/images/floor/list2-2.jpg',
+            open_type: 'navigate',
+            url: '/pages/goods_list/index?query="服饰"',
+          },
+          {
+            name: '夏季热门',
+            img_src: '/assets/images/floor/list2-3.jpg',
+            open_type: 'navigate',
+            url: '/pages/goods_list/index?query="服饰"',
+          },
+          {
+            name: '夏季热门',
+            img_src: '/assets/images/floor/list2-3.jpg',
+            open_type: 'navigate',
+            url: '/pages/goods_list/index?query="服饰"',
+          },
+        ]
+      },
+      {
+        title: {
+          name: '读书节',
+          img_src: '/assets/images/floor/t3.jpg'
+        },
+        productList: [
+          {
+            name: '优质男装',
+            img_src: '/assets/images/floor/list3-1.jpg',
+            open_type: 'navigate',
+            url: '/pages/goods_list/index?query="服饰"',
+          },
+          {
+            name: '夏季热门',
+            img_src: '/assets/images/floor/list3-2.jpg',
+            open_type: 'navigate',
+            url: '/pages/goods_list/index?query="服饰"',
+          },
+          {
+            name: '夏季热门',
+            img_src: '/assets/images/floor/list3-2.jpg',
+            open_type: 'navigate',
+            url: '/pages/goods_list/index?query="服饰"',
+          },
+          {
+            name: '夏季热门',
+            img_src: '/assets/images/floor/list3-2.jpg',
+            open_type: 'navigate',
+            url: '/pages/goods_list/index?query="服饰"',
+          },
+        ]
+      },
     ]
   },
   /**

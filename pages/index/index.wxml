@@ -29,4 +29,19 @@
     </navigator>
   </view>
   <!-- 导航开始 end -->
+  <!-- 楼层 start -->
+  <view class="floor">
+    <view class="floor-container" wx:for="{{ floorList }}" wx:key="{{ id }}">
+      <view class="header-container">
+        <text class="header-name">{{ item.title.name }}</text>
+      </view>
+      <!-- 商品 -->
+      <view class="list-container">
+        <navigator url="{{ subItem.url }}" wx:for="{{ item.productList }}" wx:for-item="subItem" wx:for-index="subIndex">
+          <image src="{{subItem.img_src}}" mode="widthFix"></image>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <!-- 楼层 end -->
 </view>

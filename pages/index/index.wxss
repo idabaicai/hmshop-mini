@@ -1,8 +1,5 @@
 /* pages/index/index.wxss */
 /* 轮播图 */
-.swiper-container {
-  margin-top: 10rpx;
-}
 .swiper-container swiper {
   width: 750rpx;
   height: 320rpx;
@@ -18,7 +15,7 @@
   height: 210rpx;
 }
 .cate .nav image {
-  width: 120rpx;
+  width: 100rpx;
 }
 .item-container {
   display: flex;
@@ -28,4 +25,19 @@
 .item-container .name {
   color: var(--font-color);
   font-size: 32rpx;
+}
+/* 楼层 */
+.floor {
+  color: var(--font-color);
+}
+.header-container {
+  margin: 18rpx 20rpx;
+  font-size: 36rpx;
+  font-weight: 800;
+}
+.list-container {
+  display: flex;
+}
+.list-container image {
+  width: 250rpx;
 }
