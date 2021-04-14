@@ -37,7 +37,8 @@
 }
 .list-container {
   display: flex;
+  justify-content: space-around;
 }
 .list-container image {
-  width: 250rpx;
+  width: 240rpx;
 }

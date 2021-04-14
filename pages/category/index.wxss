@@ -1,1 +1,27 @@
 /* pages/category/index.wxss */
+.cate-content {
+  display: flex;
+}
+/* 左侧滚动 */
+.cate-left-wrap {
+  height: 100vh;
+  width: 200rpx;
+  background-color: #eee;
+}
+.cate-left-wrap .cate-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90rpx;
+}
+.current {
+  background-color: #fff;
+  border-radius: 20rpx 0 0 20rpx;
+}
+/* 右侧展示 */
+.cate-right-wrap {
+  width: 530rpx;
+  height: 100vh;
+  background-color: var(--theme-color);
+  border-radius: 20rpx 20rpx 0 0;
+}
