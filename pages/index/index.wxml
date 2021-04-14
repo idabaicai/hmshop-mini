@@ -5,10 +5,11 @@
   <!-- 搜索框 end -->
   <!-- 轮播图 start -->
   <view class="swiper-container">
-    <swiper autoplay="true" class="swiper">
+    <swiper duration="1000" autoplay indicator-dots circular class="swiper" indicator-active-color="var(--theme-color)">
       <swiper-item 
         wx:for="{{imageList}}"
         wx:key="id"
+        indicator-dots="true"
       >
         <navigator url="{{item.url}}" class="nav">
           <!--  mode="widthFix" 让高适应宽度的变化 -->

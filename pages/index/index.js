@@ -1,3 +1,4 @@
+import { request } from '../../request/index.js'
 // pages/index/index.js
 Page({
 
@@ -26,12 +27,17 @@ Page({
       },
     ]
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // 获取轮播图数据
+    const url = 'https://api.zbztb.cn/api/public/v1/home/swiperdata';
+    request({url}).then(res => {
+      console.log(res);
+    }).catch(err => {
+      console.log(err);
+    })
   },
 
   /**
