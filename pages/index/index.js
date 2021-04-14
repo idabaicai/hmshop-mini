@@ -6,7 +6,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    imageList: [
+    // 轮播图数据
+    swiperList: [
       {
         id: 1001,
         good_name: '夏季鞋子',
@@ -15,15 +16,42 @@ Page({
       },
       {
         id: 1002,
-        good_name: '夏季鞋子',
+        good_name: 'xxx',
         url: '',
         path: '../../assets/images/good/item2.jpg'
       },
       {
         id: 1003,
-        good_name: '夏季鞋子',
+        good_name: 'xxx',
         url: '',
         path: '/assets/images/good/item3.jpg'
+      },
+    ],
+    // 分类数据
+    catesList: [
+      {
+        id: 1001,
+        name: '分类',
+        url: '',
+        icon_path: '../../assets/images/cates/item1.png'
+      },
+      {
+        id: 1002,
+        name: '新品',
+        url: '',
+        icon_path: '../../assets/images/cates/item2.png'
+      },
+      {
+        id: 1003,
+        name: '超市',
+        url: '',
+        icon_path: '../../assets/images/cates/item3.png'
+      },
+      {
+        id: 1004,
+        name: '全球Go',
+        url: '',
+        icon_path: '../../assets/images/cates/item4.png'
       },
     ]
   },
@@ -31,15 +59,39 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // 获取轮播图数据
+    //1. 获取轮播图
+    // this.getSwipeList()
+    //2. 获取分类
+    // this.getCatesList()
+  },
+  /**
+   * 获取轮播图数据
+   */
+  getSwipeList() {
     const url = 'https://api.zbztb.cn/api/public/v1/home/swiperdata';
     request({url}).then(res => {
       console.log(res);
+      this.setData({
+        imageList: res.data.msg
+      })
+    }).catch(err => {
+      // console.log(err);
+    })
+  },
+  /**
+   * 获取分类数据
+   */
+  getCatesList() {
+    // const mockUrl = 'http://127.0.0.1/getCatesList';
+    const url = 'https://api.zbztb.cn/api/public/v1/home/catitems'
+    request({url}).then(res => {
+      this.setData({
+        catesList: res.data
+      })
     }).catch(err => {
       console.log(err);
     })
   },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

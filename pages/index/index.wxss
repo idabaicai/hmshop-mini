@@ -10,3 +10,22 @@
 .swiper-container image {
   width: 100%;
 }
+/* 导航 */
+.cate {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 210rpx;
+}
+.cate .nav image {
+  width: 120rpx;
+}
+.item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item-container .name {
+  color: var(--font-color);
+  font-size: 32rpx;
+}

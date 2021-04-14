@@ -7,7 +7,7 @@
   <view class="swiper-container">
     <swiper duration="1000" autoplay indicator-dots circular class="swiper" indicator-active-color="var(--theme-color)">
       <swiper-item 
-        wx:for="{{imageList}}"
+        wx:for="{{swiperList}}"
         wx:key="id"
         indicator-dots="true"
       >
@@ -19,4 +19,14 @@
     </swiper>
   </view>
   <!-- 轮播图 end -->
+  <!-- 导航开始 start -->
+  <view class="cate">
+    <navigator class="nav" wx:for="{{ catesList }}" wx:key="id">
+      <view class="item-container">
+        <image mode="widthFix" src="{{item.icon_path}}"></image>
+        <view class="name">{{ item.name }}</view>
+      </view>
+    </navigator>
+  </view>
+  <!-- 导航开始 end -->
 </view>
