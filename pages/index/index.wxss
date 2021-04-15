@@ -41,5 +41,5 @@
   justify-content: space-around;
 }
 .list-container image {
-  width: 230rpx;
+  width: 240rpx;
 }

@@ -1,2 +1,19 @@
 <!--pages/category/index.wxml-->
-<text>pages/category/index.wxml</text>
+<view class="cate-container">
+  <!-- 顶部搜索 -->
+  <c-search></c-search>
+  <view class="cate-content mt-20">
+    <!-- 侧边滚动 -->
+    <scroll-view scroll-y class="cate-left-wrap">
+      <block  wx:for="{{ cateLevel1List }}" wx:key="{{ id }}">
+        <view bindtap="hadleTap" data-id="{{ item.id }}" class="cate-item {{ item.id===currentLevel1Id ? 'current' : '' }} ">
+        {{ item.name }}
+        </view>
+      </block>
+    </scroll-view>
+    <!-- 右侧展示 -->
+    <scroll-view scroll-y class="cate-right-wrap">
+      <view ></view>
+    </scroll-view>
+  </view>
+</view>

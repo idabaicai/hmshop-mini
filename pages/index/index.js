@@ -128,7 +128,7 @@ Page({
           },
           {
             name: '夏季热门',
-            img_src: '/assets/images/floor/list3-2.jpg',
+            img_src: '/assets/images/floor/list3-3.jpg',
             open_type: 'navigate',
             url: '/pages/goods_list/index?query="服饰"',
           },
