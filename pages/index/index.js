@@ -76,13 +76,7 @@ Page({
           },
           {
             name: '夏季热门',
-            img_src: '/assets/images/floor/list1-2.jpg',
-            open_type: 'navigate',
-            url: '/pages/goods_list/index?query="服饰"',
-          },
-          {
-            name: '夏季热门',
-            img_src: '/assets/images/floor/list1-2.jpg',
+            img_src: '/assets/images/floor/list1-3.jpg',
             open_type: 'navigate',
             url: '/pages/goods_list/index?query="服饰"',
           },
@@ -112,12 +106,6 @@ Page({
             open_type: 'navigate',
             url: '/pages/goods_list/index?query="服饰"',
           },
-          {
-            name: '夏季热门',
-            img_src: '/assets/images/floor/list2-3.jpg',
-            open_type: 'navigate',
-            url: '/pages/goods_list/index?query="服饰"',
-          },
         ]
       },
       {
@@ -129,12 +117,6 @@ Page({
           {
             name: '优质男装',
             img_src: '/assets/images/floor/list3-1.jpg',
-            open_type: 'navigate',
-            url: '/pages/goods_list/index?query="服饰"',
-          },
-          {
-            name: '夏季热门',
-            img_src: '/assets/images/floor/list3-2.jpg',
             open_type: 'navigate',
             url: '/pages/goods_list/index?query="服饰"',
           },

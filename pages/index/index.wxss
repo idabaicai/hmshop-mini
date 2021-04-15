@@ -2,9 +2,10 @@
 /* 轮播图 */
 .swiper-container swiper {
   width: 750rpx;
-  height: 320rpx;
+  height: 390rpx;
 }
 .swiper-container image {
+  margin-top: 90rpx;
   width: 100%;
 }
 /* 导航 */
@@ -37,7 +38,8 @@
 }
 .list-container {
   display: flex;
+  justify-content: space-around;
 }
 .list-container image {
-  width: 250rpx;
+  width: 230rpx;
 }
