@@ -37,7 +37,7 @@ Page({
     // 二级分类
     cateLevel2List: [
       { id: 1001, pid: 101, name: '常用分类' },
-      { id: 1002, pid: 101, name: '专场推荐' },
+      { id: 1002, pid: 101, name: '厨房小店' },
       { id: 1003, pid: 101, name: '热门分类' },
       { id: 1004, pid: 102, name: '休闲零食' },
       { id: 1005, pid: 102, name: '中外名酒' },
@@ -50,6 +50,13 @@ Page({
       { id: 10002, pid: 1001, name: '冰箱', icon: '/assets/images/cates/10002.jpg'},
       { id: 10003, pid: 1001, name: '电脑', icon: '/assets/images/cates/10003.png'},
       { id: 10004, pid: 1001, name: '手机', icon: '/assets/images/cates/10004.png'},
+      { id: 10005, pid: 1001, name: '手机', icon: '/assets/images/cates/10004.png'},
+      { id: 10006, pid: 1001, name: '手机', icon: '/assets/images/cates/10004.png'},
+      // 10002
+      { id: 10007, pid: 1002, name: '电压力锅', icon: '/assets/images/cates/10007.jpg'},
+      { id: 10008, pid: 1002, name: '电水壶', icon: '/assets/images/cates/10008.jpg'},
+      { id: 10009, pid: 1002, name: '电饭煲', icon: '/assets/images/cates/10009.jpg'},
+
     ],
     catesList: [
       {

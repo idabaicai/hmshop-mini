@@ -18,10 +18,44 @@
   background-color: #fff;
   border-radius: 20rpx 0 0 20rpx;
 }
+.cate-left-wrap .cate-item:first-child {
+  border-radius: 0 0 0 20rpx;
+}
+.cate-left-wrap .cate-item:last-child {
+  border-radius: 20rpx 0 0 0;
+}
 /* 右侧展示 */
 .cate-right-wrap {
   width: 530rpx;
   height: 100vh;
-  background-color: var(--theme-color);
+  /* background-color: var(--theme-color); */
   border-radius: 20rpx 20rpx 0 0;
+}
+.card {
+  width: 100%;
+  margin-top: 30rpx;
+  padding: 18rpx 20rpx;
+  /* background-color: pink; */
+}
+.card .title {
+  font-weight: 800;
+}
+.card .body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .cate-name {
+  font-size: 24rpx;
+}
+.cate-item image {
+  width: 150rpx;
+}
+.body .cate-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8rpx 0;
 }

@@ -5,7 +5,6 @@
   height: 390rpx;
 }
 .swiper-container image {
-  margin-top: 90rpx;
   width: 100%;
 }
 /* 导航 */

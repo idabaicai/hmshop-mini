@@ -2,7 +2,7 @@
 <view class="cate-container">
   <!-- 顶部搜索 -->
   <c-search></c-search>
-  <view class="cate-content mt-20">
+  <view class="cate-content">
     <!-- 侧边滚动 -->
     <scroll-view scroll-y class="cate-left-wrap">
       <block  wx:for="{{ cateLevel1List }}" wx:key="{{ id }}">
@@ -13,7 +13,17 @@
     </scroll-view>
     <!-- 右侧展示 -->
     <scroll-view scroll-y class="cate-right-wrap">
-      <view ></view>
+      <view class="card" wx:for="{{currentLevel2}}" wx:for-item="item2" wx:key="{{id}}">
+        <text class="title">{{item2.name}}</text>
+        <view class="body">
+          <block wx:for="{{cateLevel3List}}" wx:for-item="item3" wx:if="{{item2.id === item3.pid}}">
+            <view class="cate-item" >
+              <image src="{{item3.icon}}" mode="widthFix"></image>
+              <view class="cate-name">{{ item3.name }}</view>
+            </view>
+          </block>
+        </view>
+      </view>
     </scroll-view>
   </view>
 </view>
